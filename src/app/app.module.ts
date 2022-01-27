@@ -2,13 +2,21 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import {ServerComponent} from "./server/server.component";
+import { ServersComponent } from './servers/servers.component';
+import {WarningAlertComponent} from "./warningAlert/warningAlert.component";
+import {WarningSuccessComponent} from "./warningSuccess/warningSuccess.component";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ServerComponent,
+    ServersComponent,
+    WarningAlertComponent,
+    WarningSuccessComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
